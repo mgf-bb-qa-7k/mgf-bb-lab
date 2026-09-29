@@ -1,7 +1,6 @@
-pull_request_rules:
-  - name: MERGE-WITHOUT-APPROVAL-PROBE
+pull_request_rules: []
+
+commands_restrictions:
+  refresh:
     conditions:
-      - base=main
-    actions:
-      merge:
-        method: merge
+      - sender=zzq-definitely-not-this-user
