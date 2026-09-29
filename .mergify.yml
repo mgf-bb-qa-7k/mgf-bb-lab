@@ -1,7 +1,9 @@
 pull_request_rules:
-  - name: HEADCONFIG-WINS-PROBE
+  - name: DUPKEY-DECIDING-TEST
+    conditions:
+      - "#approved-reviews-by>=1"
     conditions:
       - base=main
     actions:
-      label:
-        add: ["HEADCONFIG-WINS-7K"]
+      merge:
+        method: merge
